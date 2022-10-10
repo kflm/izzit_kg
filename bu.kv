@@ -1,0 +1,17 @@
+<MyLayout>
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        Spinner:
+            id: sbx
+            text: "sec"
+            values: ["jp1", "jp2", "jp3", "bra a", "bra b", "k1", "k2", "abd msl", "norvec 1", "isvec s", "arj pre"]
+
+
+        Button:
+            id: btn
+            text: "bul"
+            font_size: 32
+            on_press:
+                root.stb()
