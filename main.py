@@ -14,7 +14,9 @@ def nsm(a, b, c, d):
 def scrap(lig):
     txt = open("sonuc.txt", "w")
     pth = "C:\Program Files (x86)\chromedriver.exe"
+#!!!!path of chrome driver
     driver = webdriver.Chrome(pth)
+
     driver.get(lig)
     lst1 = driver.find_elements(By.XPATH, '//*[@id="matches-list"]/div[8]/div/div/div/div/div/ul')
     hlnk, alnk = [], []
